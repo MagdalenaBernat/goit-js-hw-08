@@ -1,8 +1,9 @@
 "use strict";
+import css from "../css/01-gallery.css";
 import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import "../../node_modules/simplelightbox/dist/simple-lightbox.min.css";
 // import "/node_modules/simplelightbox";
-// const _ = require("lodash");
+// const _ = require("lodash");n
 
 // Add imports above this line
 import { galleryItems } from './gallery-items';

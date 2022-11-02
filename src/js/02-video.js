@@ -45,18 +45,18 @@ player.on('play', function() {
     console.log('played the video!');
 });
 
-// const videoPlayer = document.getElementById("vimeo-player");
+const videoPlayer = document.getElementById("vimeo-player");
 
 const iframe = document.querySelector('iframe');
-    const player = new Vimeo.Player(iframe);
+    player = new Player(iframe);
 
     player.on('play', function() {
         console.log('played the video!');
     });
 
-    // player.getVideoTitle().then(function(title) {
-    //     console.log('title:', title);
-    // });
+    player.getVideoTitle().then(function(title) {
+        console.log('title:', title);
+    });
 
 player.getCurrentTime().then(function(seconds) {
     // seconds = the current playback position
