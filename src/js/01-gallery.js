@@ -1,7 +1,7 @@
 "use strict";
-import SimpleLightbox from "simplelightbox";
+// import SimpleLightbox from "simplelightbox";
 import "/node_modules/simplelightbox";
-const _ = require("lodash");
+// const _ = require("lodash");
 
 // Add imports above this line
 import { galleryItems } from './gallery-items';
