@@ -1,6 +1,7 @@
 "use strict";
-// import SimpleLightbox from "simplelightbox";
-import "/node_modules/simplelightbox";
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+// import "/node_modules/simplelightbox";
 // const _ = require("lodash");
 
 // Add imports above this line
@@ -21,17 +22,17 @@ const createGallery = galleryItems
 
 gallery.insertAdjacentHTML("beforeend", createGallery);
 
-gallery.addEventListener("click", selectImage);
+// gallery.addEventListener("click", selectImage);
 
-function selectImage(event) {
-  if (event.target.nodeName !== "DIV") {
-    return;
-  }
-  const selectedImage = event.target.dataset.original;
-  console.log(selectedImage);
-};
+// function selectImage(event) {
+//   if (event.target.nodeName !== "DIV") {
+//     return;
+//   }
+//   const selectedImage = event.target.dataset.original;
+//   console.log(selectedImage);
+// };
 
-SimpleLightbox(".gallery a", {
+new SimpleLightbox(".gallery a", {
     captionsData: "alt",
     captionDelay: 250,
     captionPosition: "bottom",
