@@ -2,8 +2,6 @@
 import css from "../css/01-gallery.css";
 import SimpleLightbox from "simplelightbox";
 import "../../node_modules/simplelightbox/dist/simple-lightbox.min.css";
-// import "/node_modules/simplelightbox";
-// const _ = require("lodash");n
 
 // Add imports above this line
 import { galleryItems } from './gallery-items';
@@ -22,16 +20,6 @@ const createGallery = galleryItems
   .join("");
 
 gallery.insertAdjacentHTML("beforeend", createGallery);
-
-// gallery.addEventListener("click", selectImage);
-
-// function selectImage(event) {
-//   if (event.target.nodeName !== "DIV") {
-//     return;
-//   }
-//   const selectedImage = event.target.dataset.original;
-//   console.log(selectedImage);
-// };
 
 new SimpleLightbox(".gallery a", {
     captionsData: "alt",
