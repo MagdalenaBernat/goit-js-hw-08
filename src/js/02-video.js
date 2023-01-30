@@ -4,7 +4,7 @@ import Player from '@vimeo/player';
 
 window.onload = () => {
     const iframe = document.querySelector('iframe');
-    player = new Player(iframe);
+    const player = new Player(iframe);
     
     player.on('seeking', function (playedTime) {
 
