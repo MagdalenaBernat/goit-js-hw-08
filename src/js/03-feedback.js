@@ -20,7 +20,7 @@ const inputContent = (event) => {
   localStorage.setItem(localStorageKey, JSON.stringify({ ...currentState, [event.target.name]: event.target.value }));
 };
 
-const submitForm = (event) => {
+const submitForm = (event) => { 
   console.log(JSON.parse(localStorage.getItem(localStorageKey)));
   localStorage.setItem(localStorageKey, "{}")
   form.reset();
@@ -31,7 +31,7 @@ emailInput.addEventListener("input", _.throttle(inputContent, 500));
 messageInput.addEventListener("input", _.throttle(inputContent, 500));
 form.addEventListener("submit", submitForm);
 emailInput.value = formState.email??null;
-messageInput.value = formState.message ?? null;
+messageInput.value = formState.message??null;
 
 
 

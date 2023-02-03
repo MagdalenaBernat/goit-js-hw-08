@@ -12,8 +12,7 @@ window.onload = () => {
     });
 
     let playedTime = localStorage.getItem('playedTime');
-    if (playedTime)
-    {
+    if (playedTime){
         player.setCurrentTime(playedTime).then();
     }
 };
